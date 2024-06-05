@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-08">
+    <meta name="viewport" content="device-width" , initial-scale="1.0">
+    <head>
+        <title>Bunglows</title>
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+           .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image {
+    margin: 10px;
+    position: relative;
+    overflow: hidden; /* Prevents details from overflowing */
+  }
+  .image img {
+    width: 400px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    transition: transform 0.3s ease; /* Add smooth transition */
+  }
+  .details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 0.3s ease; /* Add smooth transition */
+    opacity: 0;
+    z-index: 1;
+  }
+  .image:hover .details {
+    transform: translateY(0);
+    opacity: 1;
+  }
+        </style>
+    </head>
+    <body>
+     <!-- <div class="card card1">
+        <h1>Bunglows</h1>
+        <p>This is 3bhk Bunglows with full furnished.
+            It has gallery various beautiful views.
+        </p>
+     </div>
+
+     <div class="card card2">
+        <h1>Villa</h1>
+        <p>This is  full furnished villa with a swimming pool.
+            It has beautiful views from all sides.
+        </p>
+     </div>
+
+     <div class="card card3">
+        <h1>Rumourss Sky Villa</h1>
+        <p>This is a very beautifully furnished sky villa with a beautiful structure and valley views in lonavla.
+        </p>
+     </div>
+
+     <div class="card card4">
+        <h1>Luxrious Villa</h1>
+        <p>This is a beautiful Luxrious villa with various
+           hills and valleys view near by with we can see from our windows.
+        </p>
+     </div> -->
+
+     <div class="gallery">
+        <div class="image">
+          <img src="image/1.png" alt="Image 1">
+          <div class="details">This is 3bhk Bunglows with full furnished.
+            It has gallery various beautiful views.</div>
+        </div>
+
+        <div class="image">
+          <img src="image/2.png" alt="Image 2">
+          <div class="details">Tnis is a Villa with swimming pool.
+             And full furnished rooms bathrooms.</div>
+        </div>
+
+        <div class="image">
+          <img src="image/3.png" alt="Image 3">
+          <div class="details">This is a Rumourss Sky Villa.
+            It has valley view from all sides with beautiful structure.
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="image/4.png" alt="Image 4">
+          <div class="details">This is a well furnished villa with beautiful mountains
+            and valleys view. It is well designed and maintained.
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="image/5.png" alt="Image 5">
+          <div class="details">This is a beautifully designed Bunglow with garden.
+            We can keep various functions in garden.
+          </div>
+        </div>
+        
+      </div>
+
+      <a href="index.html">previous page</a>
+
+    </body>
+</html>
